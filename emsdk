@@ -9,7 +9,6 @@
 # First look for pre-built python (macos)
 if [ -z "$EMSDK_PYTHON" ]; then
   PYTHON3=$(dirname $0)/python/3.7.4-2_64bit/bin/python3
-  echo $PYTHON3
   if [ -e $PYTHON3 ]; then
     EMSDK_PYTHON=$PYTHON3
     # When using our bundled python we never want the users
